@@ -6,29 +6,29 @@
 
 ### DSA
 1. **Problem 1**  
-   - **PS**: Problem Statement  
-   - **Approach**: [Brief approach description]  
-   - **Platform**: [e.g., LeetCode]  
+   - **PS**: Binary Tree Level Order Traversal I
+   - **Approach**: Used a queue to traverse tree nodes, checking left and right at each node; if present, add to the queue. At the final step of that iteration, add that element to a list, which is then added to the final list. Repeat these steps...
+   - **Platform**: Leetcode
 
 2. **Problem 2**  
-   - **PS**: Problem Statement  
-   - **Approach**: [Brief approach description]  
-   - **Platform**: [e.g., Codeforces]  
+   - **PS**: Binary Tree Level Order Traversal II
+   - **Approach**: same approach as I's solution, only difference is in style of adding into the answer list...here we are adding every coming list at start...representing last nodes appearing first in final list...
+   - **Platform**: Leetcode 
 
 3. **Problem 3**  
-   - **PS**: Problem Statement  
-   - **Approach**: [Brief approach description]  
-   - **Platform**: [e.g., GeeksforGeeks]  
+   - **PS**: Subtree of Another Tree
+   - **Approach**: Used recursion to traverse the main tree, checking if the current subtree matches the given subtree using a helper function. Returned true if a match was found; otherwise, continued with the left and right subtrees...  
+   - **Platform**: Leetcode
 
 ### OOPS
-- **PS**: Problem Statement  
-- **Approach**: [Brief approach description]  
-- **Platform**: [e.g., Your notes]  
+- **PS**: Design Parking System
+- **Approach**: Initialized parking slots in the constructor. The addCar method decrements the slot count for the given carType if available and returns true; otherwise, returns false... 
+- **Platform**: Leetcode
 
 ### DBMS
-- **PS**: Problem Statement  
-- **Approach**: [Brief approach description]  
-- **Platform**: [e.g., SQL Database]  
+- **PS**: Combine Two Tables  
+- **Approach**: Used LEFT JOIN to combine Person and Address tables, selecting firstName, lastName, city, and state, matching rows on personId, and including all Person rows.
+- **Platform**: Leetcode 
 
 ---
 
@@ -36,31 +36,31 @@
 
 ### DSA
 1. **Problem 1**  
-   - **PS**: Problem Statement  
-   - **Approach**: [Brief approach description]  
-   - **Platform**: [e.g., LeetCode]  
+   - **PS**:   
+   - **Approach**:  
+   - **Platform**:  
 
 2. **Problem 2**  
-   - **PS**: Problem Statement  
-   - **Approach**: [Brief approach description]  
-   - **Platform**: [e.g., Codeforces]  
+   - **PS**: 
+   - **Approach**: 
+   - **Platform**:
 
 3. **Problem 3**  
-   - **PS**: Problem Statement  
-   - **Approach**: [Brief approach description]  
-   - **Platform**: [e.g., GeeksforGeeks]  
+   - **PS**:  
+   - **Approach**: 
+   - **Platform**: 
 
 ### OOPS
-- **PS**: Problem Statement  
-- **Approach**: [Brief approach description]  
-- **Platform**: [e.g., Your notes]  
+- **PS**:   
+- **Approach**:   
+- **Platform**:  
 
 ### DBMS
-- **PS**: Problem Statement  
-- **Approach**: [Brief approach description]  
-- **Platform**: [e.g., SQL Database]  
+- **PS**: 
+- **Approach**: 
+- **Platform**: 
 
 ---
 
 ## Day 3 - 28th January 2025
-(*Continue in the same pattern...*)
+
