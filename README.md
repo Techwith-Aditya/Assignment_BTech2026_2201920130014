@@ -66,6 +66,36 @@
 
 ### DSA
 1. **Problem 1**  
+   - **PS**: Deepest Leaves Sum
+   - **Approach**: Initialize maxDepth and sum...perform DFS, updating maxDepth and sum when encountering leaf nodes...if a leaf is at the deepest level, set or add its value to sum...recursively traverse left and right subtrees...return sum after the DFS...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Balanced Binary Tree
+   - **Approach**: Check if the height of the tree is -1...recursively calculate the height of left and right subtrees...if the difference in height is more than 1 or either subtree is unbalanced, return -1...otherwise, return the height of the tree...
+   - **Platform**: Leetcode
+
+3. **Problem 3**  
+   - **PS**: Leaves at Same Level or Not
+   - **Approach**: Start at root level 0...when a leaf is found, set firstEncounteredLeafLevel...for subsequent leaves, check if they match this level...recursively traverse left and right subtrees, incrementing the level...return true if all leaves are at the same level, else false...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Design HashMap
+- **Approach**: Initialize a map array of size maximum given...the put method stores a value, get returns it, and remove sets it to -1 for deletion...
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Duplicate Emails
+- **Approach**: Select emails from the Person table, group by email, and return those that appear more than once...
+- **Platform**: Leetcode
+
+---
+
+## Day 4 - 29th January 2025
+
+### DSA
+1. **Problem 1**  
    - **PS**:   
    - **Approach**:  
    - **Platform**:  
@@ -88,6 +118,4 @@
 ### DBMS
 - **PS**: 
 - **Approach**: 
-- **Platform**: 
-
----
+- **Platform**:
