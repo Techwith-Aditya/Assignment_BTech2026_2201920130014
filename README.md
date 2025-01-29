@@ -96,6 +96,38 @@
 
 ### DSA
 1. **Problem 1**  
+   - **PS**: Same Tree
+   - **Approach**: Compare nodes of both trees recursively...if both nodes are null, return true...if only one is null or values differ, return false...otherwise, check left and right subtrees...return true if both subtrees are identical, otherwise return false...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Isomorphic Trees
+   - **Approach**: Checks if two binary trees are isomorphic by comparing their left and right subtrees both with (left of one compared with right of other and vice-versa) and without swapping (left of one is compared with left of other and vice-versa)...It returns true if either comparison is valid, ensuring the trees are isomorphic...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Transform to Sum Tree
+   - **Approach**: Converting a binary tree into a sum tree by recursively transforming each node...for each node, it calculates the sum of values from its left and right subtrees, updates the node's value with this sum, and returns the updated value plus the node's old value...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Design Linked List
+- **Approach**:
+   - The first solution implements a classic linked list approach using a custom Node class with operations like adding, getting, and deleting nodes at specified positions...
+   - The second solution uses an ArrayList to achieve the same functionality by built-in list operations for adding, retrieving, and removing elements...
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Delete Duplicate Emails
+- **Approach**: Using approach which deletes duplicate rows from the Person table by joining it with itself, and deleting the row with the larger id for each matching email...
+- **Platform**: Leetcode
+
+---
+
+## Day 5 - 30th January 2025
+
+### DSA
+1. **Problem 1**  
    - **PS**:   
    - **Approach**:  
    - **Platform**:  
