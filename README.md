@@ -128,6 +128,36 @@
 
 ### DSA
 1. **Problem 1**  
+   - **PS**: Construct Binary Tree from Preorder and Inorder Traversal
+   - **Approach**: Used a HashMap to store inorder indices for quickly finding of desired root...the first element in preorder is the root, and its position in inorder helps split the left and right subtrees...recursively construct the tree by selecting appropriate segments of both traversals until the base condition is met...like using proper two-two pointers on both preorder and inorder arrays and uppdating at every recursive call...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Find the height of a binary tree
+   - **Approach**: Find the height of a binary tree, I used recursion...if the node is null, return -1...otherwise, compute the height of the left and right subtrees, add 1 for the current node, and return the maximum of both...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Diameter of a Binary Tree
+   - **Approach**: The diameter of a binary tree is found using recursion...for each node, the left and right subtree heights are calculated, and their sum updates the maximum diameter...the function returns 1 + max(leftH, rightH) as the node’s height is processed...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Design a stack that supports push, pop, top, and retrieving the minimum element in constant time
+- **Approach**: Used a stack of integer arrays to store each value along with the minimum so far...push operation stores both value and the current minimum, ensuring constant time retrieval...pop removes the top element, top returns the latest value, and getMin fetches the current minimum efficiently...maintains minimum tracking by updating at every push operation...
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Filter Big Countries
+- **Approach**: Used WHERE with OR to filter countries by area (≥ 3M km²) or population (≥ 25M)...retrieved country name, population, and area from the World table...
+- **Platform**: Leetcode
+
+---
+
+## Day 6 - 31th January 2025
+
+### DSA
+1. **Problem 1**  
    - **PS**:   
    - **Approach**:  
    - **Platform**:  
