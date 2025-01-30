@@ -1,4 +1,4 @@
-// Problem: Combine Two Tables
+-- Problem: Combine Two Tables
 
 SELECT Person.firstName, Person.lastName, Address.city, Address.state 
 FROM Person
