@@ -1,4 +1,4 @@
-// Problem: Delete Duplicate Emails
+-- Problem: Delete Duplicate Emails
 
 DELETE p1
 FROM Person AS p1
