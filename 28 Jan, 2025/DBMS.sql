@@ -1,4 +1,4 @@
-// Problem: Duplicate Mails
+-- Problem: Duplicate Mails
 
 SELECT email FROM Person
 GROUP BY email
