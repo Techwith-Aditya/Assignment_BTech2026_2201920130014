@@ -1,4 +1,4 @@
-// Problem: Big Countries
+-- Problem: Big Countries
 
 SELECT World.name, World.population, World.area
 FROM World
