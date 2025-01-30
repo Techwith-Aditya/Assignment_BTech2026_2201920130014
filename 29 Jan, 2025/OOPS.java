@@ -1,4 +1,4 @@
-// Simulated Linked List by simple traversal technique:
+// Solution_1: Simulated Linked List by simple traversal technique:
 
 // class MyLinkedList {
 //     private class Node {
@@ -105,7 +105,7 @@
 //     }
 // }
 
-// ArrayList implemented for LinkedList simulation:
+// Solution_2: ArrayList implemented for LinkedList simulation:
 
 class MyLinkedList {
     ArrayList<Integer> a=new ArrayList<>();
