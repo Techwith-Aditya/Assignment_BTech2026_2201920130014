@@ -22,7 +22,9 @@
 
 ### OOPS
 - **PS**: Design Parking System
-- **Approach**: Initialized parking slots in the constructor. The addCar method decrements the slot count for the given carType if available and returns true; otherwise, returns false... 
+- **Approach**: Did by simple checking of slots...
+  - Initialized parking slots in the constructor.
+  - The addCar method decrements the slot count for the given car type if available and returns true; otherwise, returns false.
 - **Platform**: Leetcode
 
 ### DBMS
@@ -52,7 +54,9 @@
 
 ### OOPS
 - **PS**: Range Sum Query - Immutable
-- **Approach**: Initialize nums..for sumRange, iterate from left to right & add elements to sum...at last, Return sum...
+- **Approach**: Used simple looping concept...
+  - Initialize the nums array to store the values.
+  - For sumRange, iterate from left to right, adding elements to the sum and returning the final sum.
 - **Platform**: Leetcode
 
 ### DBMS
@@ -82,7 +86,9 @@
 
 ### OOPS
 - **PS**: Design HashMap
-- **Approach**: Initialize a map array of size maximum given...the put method stores a value, get returns it, and remove sets it to -1 for deletion...
+- **Approach**: Used simple approach for it...
+  - Initialize a map array of maximum size to store values.
+  - The put method stores a value, get returns it, and remove sets it to -1 for deletion.
 - **Platform**: Leetcode
 
 ### DBMS
@@ -112,7 +118,7 @@
 
 ### OOPS
 - **PS**: Design Linked List
-- **Approach**:
+- **Approach**: Used simple simulation technique in both solutions...
    - The first solution implements a classic linked list approach using a custom Node class with operations like adding, getting, and deleting nodes at specified positions...
    - The second solution uses an ArrayList to achieve the same functionality by built-in list operations for adding, retrieving, and removing elements...
 - **Platform**: Leetcode
@@ -144,7 +150,10 @@
 
 ### OOPS
 - **PS**: Design a stack that supports push, pop, top, and retrieving the minimum element in constant time
-- **Approach**: Used a stack of integer arrays to store each value along with the minimum so far...push operation stores both value and the current minimum, ensuring constant time retrieval...pop removes the top element, top returns the latest value, and getMin fetches the current minimum efficiently...maintains minimum tracking by updating at every push operation...
+- **Approach**: Used a stack of integer arrays to store each value along with the minimum so far...
+  - Push stores both value and current minimum for constant-time retrieval.
+  - Pop removes the top element, while top returns the latest value.
+  - getMin() efficiently fetches the minimum by tracking it at each push.
 - **Platform**: Leetcode
 
 ### DBMS
@@ -155,6 +164,40 @@
 ---
 
 ## Day 6 - 31th January 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Addition of two Linked-Lists
+   - **Approach**: Used pointer-based traversal to iterate both lists, summing node values with carry...created a new node for each sum’s unit digit, updating carry for the next step...linked nodes sequentially to form the result list...continued until both lists and carry were processed, returning the new list’s head...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Top View of Binary Tree
+   - **Approach**: Used a queue for level-order traversal, storing nodes with their horizontal distances...maintained a TreeMap to track the first node at each distance...processed nodes by dequeuing, recording the first occurrence per line, and enqueuing children with updated distances...extracted values from the map to form the top view list, ensuring sorted order by horizontal distance...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Bottom View of Binary Tree
+   - **Approach**: Used a queue for level-order traversal, storing nodes with their horizontal distances...maintained a TreeMap to update the latest node at each distance...processed nodes by dequeuing, recording the most recent node per line, and enqueuing children with updated distances...extracted values from the map to form the bottom view list, ensuring sorted order by horizontal distance...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Peeking Iterator
+- **Approach**: Ussed library Iterator to solve this prob...
+  - Initialized nextval in the constructor if the iterator has elements.
+  - peek() returns nextval without advancing.
+  - next() returns nextval, updates it with the next element, or sets it to null.
+  - hasNext() checks if nextval is non-null or if more elements exist.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Department Highest Salary
+- **Approach**: Used a subquery to find the highest salary in each department...joined Employee and Department tables on DepartmentId...filtered employees whose salary matches the department’s maximum salary...selected department name, employee name, and salary...
+- **Platform**: Leetcode
+
+---
+
+## Day 7 - 1st Feb 2025
 
 ### DSA
 1. **Problem 1**  
