@@ -1,4 +1,4 @@
--- Problem: Implement Queue using Stacks
+// Problem: Implement Queue using Stacks
 
 import java.util.*;
 class MyQueue {
