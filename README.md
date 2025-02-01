@@ -201,6 +201,39 @@
 
 ### DSA
 1. **Problem 1**  
+   - **PS**: Diagonal Traverse
+   - **Approach**: Traversed the matrix diagonally using a boolean variBLE up...moved diagonally up until the top or right boundary, then adjusted row/column...moved diagonally down until the bottom or left boundary, then adjusted row/column...toggled up after each diagonal traversal...stored elements in a 1D array and returned the result.
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Diagonal Tree Traversal
+   - **Approach**: Used a queue to traverse the tree diagonally...added the current node to the queue, then processed its left child if it exists...stored the node’s value in the list and moved to its right child...repeated the steps for all nodes in the queue until traversal was complete...returned the list of diagonal elements.
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Maximum Subarray Sum
+   - **Approach**: Used Kadane’s Algorithm to find the maximum subarray sum in O(n) time...iterated through the array while maintaining a running sum...updated the maximum sum encountered so far...reset the sum to zero if it became negative to start fresh from the next element...ensured at least one element contributed to the result...returned the maximum sum found.
+   - **Platform**: Leetcode
+
+### OOPS
+- **PS**: Implement Queue using Stacks 
+- **Approach**: Used two stack to simulate queue operation...
+  - Used two stacks (s1 and s2) to simulate queue behavior by reversing order during push()
+  - pop() and peek() directly accessed the top element of s1 to maintain FIFO order.
+  - empty() checked if s1 was empty, determining if the queue had elements.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Customers Who Never Order
+- **Approach**: Used LEFT JOIN to include all customers, even those without orders...matched customers with orders using customerId but retained unmatched rows...filtered results where Orders.id was NULL to list only customers who never placed an order...
+- **Platform**: Leetcode
+
+---
+
+## Day 8 - 2nd Feb 2025
+
+### DSA
+1. **Problem 1**  
    - **PS**:   
    - **Approach**:  
    - **Platform**:  
