@@ -234,26 +234,30 @@
 
 ### DSA
 1. **Problem 1**  
-   - **PS**:   
-   - **Approach**:  
-   - **Platform**:  
+   - **PS**: 2Sum
+   - **Approach**: Used a HashMap to store numbers and their indices for quick access...iterated through the array, checking if the complement (target - current number) exists in the map...if found, returned indices; otherwise, stored the current number for future checks...
+   - **Platform**: Leetcode
 
 2. **Problem 2**  
-   - **PS**: 
-   - **Approach**: 
-   - **Platform**:
+   - **PS**: 3Sum
+   - **Approach**: Sorted the array and used a fixed pointer with two-pointer approach...iterated through the array, skipping duplicates, and used left and right pointers to find triplets summing to zero...adjusted pointers accordingly to avoid duplicates and find valid combinations efficiently...
+   - **Platform**: Leetcode
 
 3. **Problem 3**  
-   - **PS**:  
-   - **Approach**: 
-   - **Platform**: 
+   - **PS**: 4Sum
+   - **Approach**: Sorted the array and used two nested loops with a two-pointer approach…iterated through the array, skipping duplicates, and used left and right pointers to find quadruplets summing to the target...adjusted pointers accordingly to avoid duplicates and efficiently find valid combinations...
+   - **Platform**: Leetcode
 
 ### OOPS
-- **PS**:   
-- **Approach**:   
-- **Platform**:  
+- **PS**: LRU Cache
+- **Approach**: Simulated all operations using following operations...
+  - Used a DLL for ordering and a HashMap for quick access to nodes...
+  - Retrieved node from the map, moved it to the front if found, else returned -1...
+  - Updated existing node or added a new one, evicting the least recently used if at capacity...
+  - Used helper functions to delete a node and insert it after the head for efficient updates...
+- **Platform**: Leetcode
 
 ### DBMS
-- **PS**: 
-- **Approach**: 
-- **Platform**:
+- **PS**: Not Boring Movies
+- **Approach**: Filtered movies with odd id and non-"boring" descriptions…sorted results by descending rating...
+- **Platform**: Leetcode
