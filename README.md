@@ -261,3 +261,38 @@
 - **PS**: Not Boring Movies
 - **Approach**: Filtered movies with odd id and non-"boring" descriptions…sorted results by descending rating...
 - **Platform**: Leetcode
+
+---
+
+## Day 9 - 3rd Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Warrior's Minimum Moves on Chessboard - Given an 8x8 chessboard, determine the minimum moves for a warrior to reach a destination, moving like both a knight and a king...
+   - **Approach**: Used a BFS approach with a queue to explore possible moves from the starting position, considering both knight and king moves...marked visited positions to avoid revisiting and returned the number of moves when the destination is reached...
+   - **Platform**: VSCode (Because it was customised problem given by CDC during interview)
+
+2. **Problem 2**  
+   - **PS**: Find a Corresponding Node of a Binary Tree in a Clone of That Tree
+   - **Approach**: Used a recursive approach to traverse both the original and cloned binary trees simultaneously...when the target node is found in the original tree, return the corresponding node from the cloned tree...
+   - **Platform**: Leetcode
+
+3. **Problem 3**  
+   - **PS**: Level of a Node in Binary Tree
+   - **Approach**: Used a recursive helper function to traverse the binary tree, tracking the current level...when the target node is found, set the level and return true, otherwise continue the search in both left and right subtrees...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Design Circular Queue
+- **Approach**: Simulated all operations using following operations...
+  - Created a circular queue using an array, with front and rear pointers to track the first and last elements…initialized both to -1 when the queue is empty.
+  - Added (enQueue) and removed (deQueue) elements while wrapping around the array using modular arithmetic…updated pointers to maintain circular behavior.
+  - Included helper functions to check if the queue is full or empty (isFull, isEmpty) and to get the first and last elements (Front, Rear).
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Employees Earning More Than Their Managers
+- **Approach**: Joined the Employee table to itself using managerId to match employees with their respective managers…compared each employee’s salary with their manager’s salary and selected only those employees who earn more than their managers…returned the names of such employees...
+- **Platform**: Leetcode
+
+---
