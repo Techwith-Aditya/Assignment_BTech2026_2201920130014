@@ -296,3 +296,36 @@
 - **Platform**: Leetcode
 
 ---
+
+## Day 10 - 4th Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Symmetric Tree
+   - **Approach**: Used a recursive approach to check if the left and right subtrees are mirror images. If both nodes are null, return true; if only one is null, return false. If values match, recursively compare their children in a mirrored manner....
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Merge K sorted Lists
+   - **Approach**: Used a recursive approach to traverse both the original and cloned binary trees simultaneously...when the target node is found in the original tree, return the corresponding node from the cloned tree...
+   - **Platform**: Leetcode
+
+3. **Problem 3**  
+   - **PS**: Reverse First K elements of Queue
+   - **Approach**: Used a stack to reverse the first k elements of the queue while maintaining the order of the remaining elements. Dequeued k elements, pushed them onto the stack, then popped them back into the queue. Rotated the rest to maintain the original order...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Insert Delete GetRandom O(1)
+- **Approach**: Simulated all operations using following operations...
+  - Used a HashMap to store values with their indices for O(1) insert and remove operations.
+  - Used an ArrayList to store elements, allowing O(1) random access.
+  - Added the value to the list and stored its index in the map.
+  - Swapped the target element with the last element, updated the map, and removed the last element.
+  - Used Random to return a random element from the list in O(1) time.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Rising Temperature
+- **Approach**: Used a self-join to compare each day's temperature with the previous day's. The DATEDIFF function ensures the records are exactly one day apart. Selected the id where the current day's temperature is higher than the previous day's...
+- **Platform**: Leetcode
