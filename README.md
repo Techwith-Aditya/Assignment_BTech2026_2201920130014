@@ -329,3 +329,36 @@
 - **PS**: Rising Temperature
 - **Approach**: Used a self-join to compare each day's temperature with the previous day's. The DATEDIFF function ensures the records are exactly one day apart. Selected the id where the current day's temperature is higher than the previous day's...
 - **Platform**: Leetcode
+
+---
+
+## Day 11 - 5th Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Reorder List
+   - **Approach**: Used a two-pointer approach to find the middle of the linked list. If the list has fewer than three nodes, return as no reordering is needed. Split the list into two halves, then reverse the second half. Merge the two halves by alternating nodes from each...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Tree Boundary Traversal
+   - **Approach**: Used a traversal-based approach to collect boundary nodes in three steps. First, added the root if it's not a leaf. Collected the left boundary excluding leaves, then all leaf nodes using a recursive traversal. Finally, stored the right boundary in reverse order to maintain the correct sequence...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Remove Nth Node From End of List
+   - **Approach**: Used a two-pointer approach to find and remove the Nth node from the end. Initialized a dummy node to handle edge cases. Moved the first pointer N+1 steps ahead, then moved both pointers together until the first reached null. Adjusted the second pointer’s next reference to remove the target node...
+   - **Platform**: Leetcode
+
+### OOPS
+- **PS**: Binary Search Tree Iterator
+- **Approach**: Simulated all operations using following operations...
+  - Used a stack-based approach to simulate an in-order traversal of the BST. Pushed all left nodes onto the stack during initialization.
+  - The next() function pops the top node, processes its value, and pushes all left descendants of its right child onto the stack.
+  - The hasNext() function checks if the stack is empty, determining whether more nodes remain in the traversal.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Rank Scores
+- **Approach**: Used a subquery approach to rank scores. Selected each score and determined its rank by counting distinct scores greater than or equal to it. Ordered the results in descending order to maintain ranking from highest to lowest...
+- **Platform**: Leetcode
