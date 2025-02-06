@@ -362,3 +362,36 @@
 - **PS**: Rank Scores
 - **Approach**: Used a subquery approach to rank scores. Selected each score and determined its rank by counting distinct scores greater than or equal to it. Ordered the results in descending order to maintain ranking from highest to lowest...
 - **Platform**: Leetcode
+
+---
+
+## Day 12 - 6th Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Construct Binary Tree from String with bracket representation
+   - **Approach**: Used recursion to construct a binary tree from a string with bracket representation. Parsed the numeric values to create nodes, handling negative numbers if present. Used a helper function to recursively build the left and right subtrees by detecting opening and closing brackets. Returned the root of the constructed tree after processing the entire string...
+   - **Platform**: GeeksForGeeks
+
+2. **Problem 2**  
+   - **PS**: Merge Sort for Linked List
+   - **Approach**: Used recursion to implement merge sort for a linked list. First, found the middle node to split the list into two halves. Recursively sorted both halves and then merged them using a helper function. The merge function combined the two sorted lists by comparing node values and linking them accordingly. Returned the head of the fully sorted linked list...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Quick Sort for Linked List
+   - **Approach**: Used recursion to implement quick sort on a linked list. Selected the last node as the pivot and partitioned the list into three parts: nodes smaller than, equal to, and greater than the pivot. Recursively sorted the smaller and larger partitions. Finally, concatenated the sorted partitions to form the final sorted list and returned the head of the sorted linked list...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Find Median from Data Stream
+- **Approach**: Simulated all operations using following operations...
+  - Used two heaps – a max heap (for the first half of numbers) and a min heap (for the second half) to maintain a balanced data structure.
+  - Balanced the heaps – ensured the max heap size is never more than one element larger than the min heap by moving elements when necessary.
+  - Calculated the median – returned the average of the two heap tops if sizes were equal; otherwise, returned the max heap’s top element.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: User Activity for the Past 30 Days I
+- **Approach**: Used SQL to retrieve user activity for the past 30 days. Filtered records within the date range 2019-06-28 to 2019-07-27 and excluded entries outside this range. Grouped data by activity date and counted distinct user IDs to determine daily active users. Returned the date and the corresponding number of active users...
+- **Platform**: Leetcode
