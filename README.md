@@ -395,3 +395,37 @@
 - **PS**: User Activity for the Past 30 Days I
 - **Approach**: Used SQL to retrieve user activity for the past 30 days. Filtered records within the date range 2019-06-28 to 2019-07-27 and excluded entries outside this range. Grouped data by activity date and counted distinct user IDs to determine daily active users. Returned the date and the corresponding number of active users...
 - **Platform**: Leetcode
+
+---
+
+## Day 13 - 7th Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Reverse Linked List
+   - **Approach**: Used an iterative approach to reverse a singly linked list. Initialized three pointers: prev (to track the previous node), pres (to track the current node), and nex (to track the next node). Iterated through the list, updating pointers to reverse the links. Set pres.next to prev at each step to reverse the direction of the link, moved prev forward, and advanced pres and nex. Returned prev as the new head of the reversed list after traversal...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Linked List Cycle
+   - **Approach**: Used Floyd’s Cycle Detection Algorithm (Tortoise and Hare) to detect a cycle in a linked list. Initialized two pointers: slow (moves one step at a time) and fast (moves two steps at a time). Iterated through the list while fast and fast.next are not null. If slow and fast meet at any node, a cycle exists, and true is returned. If the loop exits without a meeting point, false is returned, indicating no cycle...
+   - **Platform**: Leetcode
+
+3. **Problem 3**  
+   - **PS**: Merge Two Sorted Lists
+   - **Approach**: Used an iterative approach with a dummy node to merge two sorted linked lists. Initialized a dummy node to simplify edge cases and a current pointer to build the merged list. Iterated through both lists, comparing node values and linking the smaller node to current. Moved current forward after each selection. If any list remains after traversal, linked the remaining nodes directly. Returned dummy.next as the head of the merged sorted list...
+   - **Platform**: Leetcode
+
+### OOPS
+- **PS**: Find Median from Data Stream
+- **Approach**: Simulated all operations using following operations...
+  - Used a Trie (prefix tree) to store words, where each letter is a node, and the last letter of a word is marked as the end.
+  - addWord stores words by going through each letter and creating nodes if they don’t already exist.
+  - search checks if a word exists by moving through the Trie, letter by letter.
+  - Handled '.' specifically by checking all possible letters at that position, making it work for pattern-based searches.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Project Employees I
+- **Approach**: Joined the Project and Employee tables based on employee_id to match employees with their projects. Grouped the data by project_id and calculated the average experience of employees in each project. Used ROUND() to keep the result up to two decimal places. Returned the project_id along with the average experience of employees working on that project...
+- **Platform**: Leetcode
