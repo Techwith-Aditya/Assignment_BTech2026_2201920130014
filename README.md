@@ -417,7 +417,7 @@
    - **Platform**: Leetcode
 
 ### OOPS
-- **PS**: Find Median from Data Stream
+- **PS**: Design Add and Search Words Data Structure
 - **Approach**: Simulated all operations using following operations...
   - Used a Trie (prefix tree) to store words, where each letter is a node, and the last letter of a word is marked as the end.
   - addWord stores words by going through each letter and creating nodes if they don’t already exist.
