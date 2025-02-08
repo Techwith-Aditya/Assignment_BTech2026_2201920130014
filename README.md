@@ -429,3 +429,37 @@
 - **PS**: Project Employees I
 - **Approach**: Joined the Project and Employee tables based on employee_id to match employees with their projects. Grouped the data by project_id and calculated the average experience of employees in each project. Used ROUND() to keep the result up to two decimal places. Returned the project_id along with the average experience of employees working on that project...
 - **Platform**: Leetcode
+
+---
+
+## Day 14 - 8th Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Best Time to Buy and Sell Stock
+   - **Approach**: Used an iterative approach to track the minimum price and maximum profit. Initialized min as the first price and maxProfit as 0. Iterated through prices, updating min and maxProfit accordingly. Returned maxProfit after traversal in O(n) time and O(1) space...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Reverse a Doubly Linked List
+   - **Approach**: Used a two-pointer approach to reverse the doubly linked list in place. Initialized prev as null and curr as head. Iterated through the list, swapping the next and prev pointers for each node. Moved curr forward using the updated prev reference. Returned prev.prev as the new head after traversal. Achieves O(n) time complexity with O(1) space complexity...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Flattening a Linked List
+   - **Approach**: Used a recursive approach to flatten a linked list where each node has a next and bottom pointer. First, recursively flattened the next list, reducing the problem size. Then, merged the current node with the flattened list using a helper function that merges two sorted lists using the bottom pointer. Maintained a dummy node for easier merging and ensured next pointers were nullified. Achieves O(n * m) time complexity (where n is the number of nodes in the top-level list and m is the average number of bottom nodes) with O(1) extra space...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Flatten Nested List Iterator
+- **Approach**: Simulated all operations using following operations...
+  - Flattening the List: Used a helper function to extract all numbers from the nested list and store them in a simple list.
+  - Preprocessing in Constructor: Converted the nested list into a flat list at the start so that iteration becomes easy.
+  - Iterator Functions: next() returns the next number and moves forward, while hasNext() checks if more numbers are left.
+  - Fast Access: Since the list is already flattened, getting the next number is quick (O(1) time), and the setup takes O(n) time.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Exchange Seats
+- **Approach**: Used a CASE-based approach to swap adjacent student IDs in the Seat table. Checked if the id is the maximum and odd, keeping it unchanged to handle cases where the total number of rows is odd. Otherwise, swapped adjacent rows by adding 1 to odd ids and subtracting 1 from even ids. Ensured the result was ordered correctly using ORDER BY id. Achieves O(n) time complexity with constant space usage...
+- **Platform**: Leetcode
