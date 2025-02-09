@@ -463,3 +463,37 @@
 - **PS**: Exchange Seats
 - **Approach**: Used a CASE-based approach to swap adjacent student IDs in the Seat table. Checked if the id is the maximum and odd, keeping it unchanged to handle cases where the total number of rows is odd. Otherwise, swapped adjacent rows by adding 1 to odd ids and subtracting 1 from even ids. Ensured the result was ordered correctly using ORDER BY id. Achieves O(n) time complexity with constant space usage...
 - **Platform**: Leetcode
+
+---
+
+## Day 15 - 9th Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Longest Valid Parentheses
+   - **Approach**: Used two hash maps: one to track element frequency and another to store stacks of elements by frequency. Maintained maxFreq to track the highest frequency. In push, updated frequency, adjusted maxFreq, and added the element to its stack. In pop, removed the most recent element from the highest frequency stack, updated frequency, and reduced maxFreq if needed. Both operations run in O(1) time with O(n) space...
+   - **Platform**: Leetcode
+
+2. **Problem 2**  
+   - **PS**: Evaluation of Postfix Expression
+   - **Approach**: Used a stack-based approach to evaluate a postfix expression. Iterated through the string, pushing digits onto the stack. When encountering an operator, popped the top two elements, applied the operation, and pushed the result back. Repeated this process until the expression was fully evaluated. Returned the final result from the stack. Runs in O(n) time with O(n) space for the stack...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Next Greater Element II
+   - **Approach**: Used a recursive approach to flatten a linked list where each node has a next and bottom pointer. First, recursively flattened the next list, reducing the problem size. Then, merged the current node with the flattened list using a helper function that merges two sorted lists using the bottom pointer. Maintained a dummy node for easier merging and ensured next pointers were nullified. Achieves O(n * m) time complexity (where n is the number of nodes in the top-level list and m is the average number of bottom nodes) with O(1) extra space...
+   - **Platform**: Leetcode
+
+### OOPS
+- **PS**: Maximum Frequency Stack
+- **Approach**: Simulated all operations using following operations...
+  - Kept track of how often each number appears (freq) and stored numbers in stacks based on their frequency (group). Used maxFreq to remember the highest frequency.
+  - Increased the count of the number, updated maxFreq if needed, and added it to the correct stack.
+  - Took out the most recent number from the highest frequency stack, reduced its count, and lowered maxFreq if the stack became empty.
+  - Both push and pop work very quickly in O(1) time, using extra space for storing numbers.
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Reformat Department Table
+- **Approach**: Used a pivot table approach to transform monthly revenue into columns. Grouped by id and used MAX with CASE to extract revenues for each month. Runs in O(n) time...
+- **Platform**: Leetcode
