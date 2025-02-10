@@ -497,3 +497,35 @@
 - **PS**: Reformat Department Table
 - **Approach**: Used a pivot table approach to transform monthly revenue into columns. Grouped by id and used MAX with CASE to extract revenues for each month. Runs in O(n) time...
 - **Platform**: Leetcode
+
+---
+
+## Day 16 - 10th Feb 2025
+
+### DSA
+1. **Problem 1**  
+   - **PS**: Multiply two linked lists
+   - **Approach**: Converted two linked lists into numbers by iterating through them and forming the number digit by digit. Used modulo operation to prevent overflow. Multiplied the two numbers and applied modulo again to return the final result. Runs in O(n + m) time with O(1) space...
+   - **Platform**: GeeksForGeeks
+
+2. **Problem 2**  
+   - **PS**: Delete nodes having greater value on right
+   - **Approach**: Recurred to the end of the linked list and processed nodes in reverse order. Updated the next pointers to skip nodes having a greater value on the right. Returned the modified head. Runs in O(n) time with O(n) recursion space...
+   - **Platform**: GeeksForGeeks
+
+3. **Problem 3**  
+   - **PS**: Next Greater Element
+   - **Approach**: Used a stack to efficiently find the next greater element for each array element in reverse order. Popped smaller elements to maintain the stack's decreasing order. Assigned the next greater element or -1 if none existed. Converted the result array to an ArrayList. Runs in O(n) time with O(n) space...
+   - **Platform**: GeeksForGeeks
+
+### OOPS
+- **PS**: Design HashSet
+- **Approach**: Simulated all operations using following operations...
+  - Used a boolean array of size 1,000,001 to directly store presence of elements, ensuring O(1) time complexity for add, remove, and contains operations.
+  - Eliminated the need for complex hashing or collision handling by utilizing direct indexing, leading to O(n) space usage...
+- **Platform**: Leetcode
+
+### DBMS
+- **PS**: Swap Salary
+- **Approach**: Used a CASE statement in the UPDATE query to swap 'm' with 'f' and vice versa for the sex column. Runs in O(n) time with O(1) space...
+- **Platform**: Leetcode
